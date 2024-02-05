@@ -10,6 +10,7 @@ import {
 import NewComp from "./src/Components/NewComp";
 
 export default function App() {
+  const name = "Firas";
   return (
     <View style={styles.container}>
       <View style={{ width: "100%", flex: 1 }}>
@@ -33,7 +34,7 @@ export default function App() {
           source={{ uri: "https://www.w3schools.com/howto/img_avatar.png" }}
         />
       </View>
-      <NewComp />
+      <NewComp name={name} />
       <StatusBar style="auto" />
     </View>
   );
